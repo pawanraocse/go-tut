@@ -1,0 +1,63 @@
+# Config file for Air
+# See https://github.com/cosmtrek/air for details
+
+# Working directory
+root = "."
+tmp_dir = "tmp"
+[build]
+# Command to build the project
+cmd = "go build -o ./tmp/main ."
+# Binary to run after build
+bin = "./tmp/main"
+# Custom build and run arguments
+full_bin = ""
+# Watch for file changes in these directories
+include_ext = ["go", "tpl", "tmpl", "html"]
+# Exclude these files from watching
+exclude_dir = ["assets", "tmp", "vendor"]
+# Exclude these files from watching by their extensions
+exclude_ext = ["go", "swp", "tmp"]
+# Watch for these extensions to trigger build and run
+include_dir = ["."]
+# Delay to restart the application (in milliseconds)
+delay = 1000
+# Set the log level (panic, fatal, error, warn, info, debug, trace)
+log_level = "info"
+# Enable/disable color output
+color = true
+# Specify the command to build the project
+build_cmd = "go build -o ./tmp/main ."
+# Specify the arguments to the build command
+build_args = []
+# Specify the full command to run the application
+run_cmd = "./tmp/main"
+# Specify the arguments to the run command
+run_args = []
+# Watch mode: native or polling
+mode = "native"
+# Notification command to run after the build
+notify_cmd = ""
+# Allow shell glob pattern to match
+shell = false
+
+# Logger configurations
+[log]
+# Log file path
+file = ""
+# Log format
+format = "text"
+# Log level
+level = "info"
+# Output to stdout
+stdout = true
+# Output to stderr
+stderr = false
+# Write to log file
+write = false
+# Disable color in the log
+no_color = false
+
+# Misc configurations
+[misc]
+# Whether to run pre-defined scripts
+scripts = false
